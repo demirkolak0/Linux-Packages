@@ -1,0 +1,1 @@
+ln -sf /usr/share/zoneinfo/Turkey /etc/localtime && hwclock --systohc && echo "LANG=en_US.UTF-8" > /etc/locale.conf && echo "KEYMAP=trq" > /etc/vconsole.conf && echo "arch" > /etc/hostname && pacman -S bash-completion && pacman -S intel-ucode iwd iw wpa_supplicant dialog xdg-user-dirs && pacman -Syy && echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
