@@ -1,0 +1,2 @@
+if internet doesnt work try: sudo ip link set enp3s0 up && sudo dhcpcd enp3s0 && systemctl enable dhcpcd.service && systemctl start dhcpcd.service && systemctl status dhcpcd.service
+(enp3s0 will be your ethernet card or whatever idk)
