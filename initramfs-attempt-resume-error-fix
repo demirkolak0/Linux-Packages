@@ -1,0 +1,21 @@
+The initramfs will attempt to resume from /dev/nvme0n1p2..Set the RESUME variable
+
+Error:
+update-initramfs: Generating /boot/initrd.img-6.1.0-18-amd64
+I: The initramfs will attempt to resume from /dev/nvme0n1p2
+I: (UUID=9ffca06d-4d88-43fc-bbb5-6cd9368e1739)
+I: Set the RESUME variable to override this.
+
+
+
+The solution is to add the UUID to this file:
+/etc/initramfs-tools/conf.d/resume
+using the following command:
+Code:
+echo "RESUME=UUID=948396b3-f329-4b5a-9771-1464ff25eca9" | sudo tee /etc/initramfs-tools/conf.d/resume
+Then update the kernels on the system:
+Code:
+sudo update-initramfs -u -k all
+Reboot the system:
+Code:
+reboot
