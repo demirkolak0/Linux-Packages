@@ -10,9 +10,9 @@ I: Set the RESUME variable to override this.
 
 The solution is to add the UUID to this file:
 /etc/initramfs-tools/conf.d/resume
-using the following command:
+using the following command: (change the uuid to your own uuid on your output)
 Code:
-echo "RESUME=UUID=948396b3-f329-4b5a-9771-1464ff25eca9" | sudo tee /etc/initramfs-tools/conf.d/resume
+echo "RESUME=UUID=9ffca06d-4d88-43fc-bbb5-6cd9368e1739" | sudo tee /etc/initramfs-tools/conf.d/resume
 Then update the kernels on the system:
 Code:
 sudo update-initramfs -u -k all
