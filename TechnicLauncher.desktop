@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=java -jar /home/demir/TechnicLauncher/TechnicLauncher.jar
+Name=Technic Launcher
+Comment=Technic Launcher
+Icon=/home/demir/TechnicLauncher/technic.png
