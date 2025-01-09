@@ -1,1 +1,1 @@
-What I must to do during or after arch or debian or fedora installation.
+Some post-install scripts for debian or fedora.
