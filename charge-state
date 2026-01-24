@@ -1,0 +1,6 @@
+if [ "$(cat /sys/class/power_supply/AC/online)" == 1 ]; then
+    echo "AC power connected"
+else
+    echo "Running on battery"
+    swaylock
+fi
