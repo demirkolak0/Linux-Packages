@@ -1,1 +1,0 @@
-sudo cp -f "/etc/pacman.conf" "/etc/pacman.conf.orig" && sudo sed -i 's/SigLevel.*/SigLevel = Never/' /etc/pacman.conf && sudo pacman -Syy gnupg archlinux-keyring && sudo mv -f "/etc/pacman.conf.orig" "/etc/pacman.conf"
